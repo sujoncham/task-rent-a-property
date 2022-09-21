@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -13,15 +14,15 @@ const Header = () => {
                     <div class='menu-button'></div>
                 </label>
                 <ul class="menu">
-                    <li>One</li>
-                    <li>Two</li>
-                    <li>Three</li>
-                    <li>Four</li>
-                    <li>Five</li>
+                    <li><Link to='/home'>Home</Link></li>
+                    <li><Link to='/buy'>Buy</Link></li>
+                    <li><Link to='/sell'>Sell</Link></li>
+                    <li><Link to='/rent'>Rent</Link></li>
+                    <li><Link to='/manageProperty'>ManagePropery</Link></li>
                 </ul>
                 <ul class="flex">
-                    <li>Login</li>
-                    <li>signup</li>
+                    <li><Link to='/login'>Login</Link></li>
+                    <li><Link to='/signup'>signup</Link></li>
                 
                 </ul>
             </section>
